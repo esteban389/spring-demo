@@ -1,0 +1,47 @@
+debug: false
+spring:
+  profiles:
+    active: local
+  main:
+    allow-bean-definition-overriding: true
+  config:
+    use-legacy-processing: true
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  cors:
+    enabled: false
+  jpa:
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.H2Dialect
+  datasource:
+    url: jdbc:h2:mem:library
+    driver-class-name: org.h2.Driver
+    user: sa
+    password: password
+
+server:
+  port: 8080
+
+management:
+  server:
+    port: 8081
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+app:
+  env: local
+
+common:
+  service-name: demo
+
+logging:
+  level:
+    root: WARN  # Set the root logger level to INFO for both console and file
+    org.springframework: WARN # Exclude loggers under the org.springframework package for both console and file
+    com.example.demo: INFO
+  file:
+    name: logging.log

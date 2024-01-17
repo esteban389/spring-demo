@@ -1,0 +1,56 @@
+2024-01-17T09:06:11.686-05:00  INFO 12804 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 12804 (C:\Users\User\Downloads\demo\target\classes started by User in C:\Users\User\Downloads\demo)
+2024-01-17T09:06:11.695-05:00  INFO 12804 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2024-01-17T09:06:14.759-05:00  WARN 12804 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-17T09:06:16.891-05:00  WARN 12804 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-17T09:06:18.943-05:00  INFO 12804 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 7.786 seconds (process running for 8.665)
+2024-01-17T09:06:29.532-05:00  INFO 12804 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Calling method: CustomerController.searchCustomer(..)
+2024-01-17T09:06:29.532-05:00  INFO 12804 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Arguments: 10
+2024-01-17T09:06:29.538-05:00  INFO 12804 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Method CustomerController.searchCustomer(..) executed successfully. Returned: <200 OK OK,{},[]>
+2024-01-17T09:06:53.317-05:00  INFO 12804 --- [http-nio-8080-exec-3] com.example.demo.aspect.RestLogger       : Calling method: CustomerController.searchCustomer(..)
+2024-01-17T09:06:53.318-05:00  INFO 12804 --- [http-nio-8080-exec-3] com.example.demo.aspect.RestLogger       : Arguments: 12
+2024-01-17T09:06:53.318-05:00  INFO 12804 --- [http-nio-8080-exec-3] com.example.demo.aspect.RestLogger       : Method CustomerController.searchCustomer(..) executed successfully. Returned: <200 OK OK,{page=2, limit=12},[]>
+2024-01-17T09:07:19.815-05:00  INFO 12804 --- [http-nio-8080-exec-4] com.example.demo.aspect.RestLogger       : Calling method: CustomerController.searchCustomer(..)
+2024-01-17T09:07:19.815-05:00  INFO 12804 --- [http-nio-8080-exec-4] com.example.demo.aspect.RestLogger       : Arguments: 12
+2024-01-17T09:07:19.815-05:00  INFO 12804 --- [http-nio-8080-exec-4] com.example.demo.aspect.RestLogger       : Method CustomerController.searchCustomer(..) executed successfully. Returned: <200 OK OK,{page=2, limit=12, otherFilter=eso},[]>
+2024-01-17T09:07:42.697-05:00  INFO 24316 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 24316 (C:\Users\User\Downloads\demo\target\classes started by User in C:\Users\User\Downloads\demo)
+2024-01-17T09:07:42.699-05:00  INFO 24316 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2024-01-17T09:07:45.210-05:00  WARN 24316 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-17T09:07:47.149-05:00  WARN 24316 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-17T09:07:48.906-05:00  INFO 24316 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 6.704 seconds (process running for 7.374)
+2024-01-17T09:07:53.976-05:00  INFO 24316 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Calling method: CustomerController.searchCustomer(..)
+2024-01-17T09:07:53.977-05:00  INFO 24316 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Arguments: 12
+2024-01-17T09:07:53.981-05:00  INFO 24316 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Method CustomerController.searchCustomer(..) executed successfully. Returned: <200 OK OK,{page=2, limit=12, otherFilter=eso},[]>
+2024-01-17T09:16:10.496-05:00  INFO 6304 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 6304 (C:\Users\User\Downloads\demo\target\classes started by User in C:\Users\User\Downloads\demo)
+2024-01-17T09:16:10.499-05:00  INFO 6304 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2024-01-17T09:16:13.761-05:00  WARN 6304 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-17T09:16:16.101-05:00  WARN 6304 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-17T09:16:18.634-05:00  INFO 6304 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 8.788 seconds (process running for 9.51)
+2024-01-17T09:16:20.016-05:00  INFO 6304 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Calling method: CustomerController.searchCustomer(..)
+2024-01-17T09:16:20.017-05:00  INFO 6304 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Arguments: 12
+2024-01-17T09:16:20.021-05:00  INFO 6304 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Method CustomerController.searchCustomer(..) executed successfully. Returned: <200 OK OK,{page=2, limit=12, otherFilter=eso},[]>
+2024-01-17T09:16:38.772-05:00  INFO 1628 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 1628 (C:\Users\User\Downloads\demo\target\classes started by User in C:\Users\User\Downloads\demo)
+2024-01-17T09:16:38.775-05:00  INFO 1628 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2024-01-17T09:16:41.959-05:00  WARN 1628 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-17T09:16:44.362-05:00  WARN 1628 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-17T09:16:46.124-05:00  INFO 1628 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 7.962 seconds (process running for 9.599)
+2024-01-17T09:16:47.367-05:00  INFO 1628 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Calling method: CustomerController.searchCustomer(..)
+2024-01-17T09:16:47.368-05:00  INFO 1628 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Arguments: 12
+2024-01-17T09:17:44.987-05:00  WARN 1628 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m3s336ms684µs800ns).
+2024-01-17T09:17:44.993-05:00  INFO 1628 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Method CustomerController.searchCustomer(..) executed successfully. Returned: <200 OK OK,{page=2, limit=12, otherFilter=eso},[]>
+2024-01-17T09:21:53.173-05:00  INFO 20368 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 20368 (C:\Users\User\Downloads\demo\target\classes started by User in C:\Users\User\Downloads\demo)
+2024-01-17T09:21:53.177-05:00  INFO 20368 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2024-01-17T09:21:56.662-05:00  WARN 20368 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-17T09:21:58.956-05:00  WARN 20368 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-17T09:22:00.699-05:00  INFO 20368 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 8.152 seconds (process running for 9.113)
+2024-01-17T09:22:02.551-05:00  INFO 20368 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Calling method: CustomerController.searchCustomer(..)
+2024-01-17T09:22:02.552-05:00  INFO 20368 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Arguments: 12
+2024-01-17T09:22:51.000-05:00  WARN 20368 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s699ms417µs800ns).
+2024-01-17T09:22:51.007-05:00  INFO 20368 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Method CustomerController.searchCustomer(..) executed successfully. Returned: <200 OK OK,{page=2, limit=12, otherFilter=eso},[]>
+2024-01-17T09:23:17.386-05:00  INFO 9064 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 9064 (C:\Users\User\Downloads\demo\target\classes started by User in C:\Users\User\Downloads\demo)
+2024-01-17T09:23:17.388-05:00  INFO 9064 --- [main] com.example.demo.DemoApplication         : The following 1 profile is active: "local"
+2024-01-17T09:23:20.290-05:00  WARN 9064 --- [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-17T09:23:22.398-05:00  WARN 9064 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-17T09:23:24.351-05:00  INFO 9064 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 7.5 seconds (process running for 8.205)
+2024-01-17T09:23:25.269-05:00  INFO 9064 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Calling method: CustomerController.searchCustomer(..)
+2024-01-17T09:23:25.269-05:00  INFO 9064 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Arguments: 12
+2024-01-17T09:23:25.273-05:00  INFO 9064 --- [http-nio-8080-exec-1] com.example.demo.aspect.RestLogger       : Method CustomerController.searchCustomer(..) executed successfully. Returned: <200 OK OK,{page=2, limit=12, otherFilter=eso},[]>
