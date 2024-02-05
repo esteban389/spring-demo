@@ -4,16 +4,16 @@ import com.example.demo.dto.CustomerDto;
 import com.example.demo.dto.api.request.CreateCustomerRequestDto;
 import com.example.demo.dto.api.response.PutResponse;
 import com.example.demo.service.management.CustomerManagementService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-
 import java.net.URI;
 import java.util.List;
-import java.util.Map;
+import java.net.Socket;
 
 /*
  * TODO add pagination to get All and search
@@ -56,7 +56,7 @@ public class CustomerController {
     }
 
     @PostMapping
-    public ResponseEntity<?> createCustomer(@RequestBody CreateCustomerRequestDto request) {
+    public ResponseEntity<?> createCustomer(@RequestBody @Valid CreateCustomerRequestDto request) {
 
         CustomerDto customer = customerManagementService.createCustomer(request);
         URI location = ServletUriComponentsBuilder.fromCurrentRequest()
@@ -79,7 +79,7 @@ public class CustomerController {
 
 
     @PutMapping("{customerId}")
-    public ResponseEntity<?> updateCustomerById(@PathVariable Long customerId, @RequestBody CreateCustomerRequestDto request) {
+    public ResponseEntity<?> updateCustomerById(@PathVariable Long customerId, @RequestBody @Valid CreateCustomerRequestDto request) {
 
         PutResponse<CustomerDto> response = customerManagementService.putCustomerById(customerId, request);
         return switch (response) {

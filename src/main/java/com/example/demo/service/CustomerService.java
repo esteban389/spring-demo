@@ -1,6 +1,7 @@
 package com.example.demo.service;
 
 import com.example.demo.dto.CustomerDto;
+import com.example.demo.entity.CustomerEntity;
 import com.example.demo.mapper.AddressMapper;
 import com.example.demo.mapper.BookMapper;
 import com.example.demo.mapper.UserMapper;
@@ -25,8 +26,9 @@ public class CustomerService {
     @Autowired
     private BookMapper bookMapper;
     public List<CustomerDto> findAllUsers() {
-
-        return repository.findAll()
+        var list = repository.findAll();
+        var test = mapper.toDto(list.getFirst());
+        return  list
                 .stream()
                 .map(mapper::toDto)
                 .toList();

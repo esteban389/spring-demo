@@ -25,7 +25,10 @@ public class CustomerEntity {
     @OneToOne
     @JoinColumn(name = "address", nullable = false)
     private AddressEntity address;
-    @OneToMany
-    @JoinColumn(name = "books", nullable = false)
+    @ManyToMany
+    @JoinTable(
+            name = "books",
+            joinColumns = @JoinColumn(name = "customer_id"),
+            inverseJoinColumns = @JoinColumn(name = "book_id"))
     private List<BookEntity> books;
 }
